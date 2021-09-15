@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.Table
+
+        {
+
+            display: table;
+
+        }
+
+        .Title
+
+        {
+
+            display: table-caption;
+
+            text-align: center;
+
+            font-weight: bold;
+
+            font-size: larger;
+
+        }
+
+        .Heading
+
+        {
+
+            display: table-row;
+
+            font-weight: bold;
+
+            text-align: center;
+
+        }
+
+        .Row
+
+        {
+
+            display: table-row;
+
+        }
+
+        .Cell
+
+        {
+
+            display: table-cell;
+			/*text-align-last: center;
+			
+          border: solid;*/
+			text-align: center;
+			
+			vertical-align: center;
+			
+			border-width: thin;
+
+            padding-left: 5px;
+
+            padding-right: 5px;
+
+        }
+
+     
+ #infoPrincipal {float:left; width:1400px;color:#000;padding:10px;background:#fff;border:1px solid #cecece;min-height:760px;margin-bottom:15px;}
+
+
+        #modal {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  right:0;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 50;
+}
+
+#modal.hidden {
+  display:none;
+}
+
+#modal div {
+  position: absolute;
+  top: 400px;
+  left: 800px;
+  z-index: 51;
+  opacity: 1;
+  background-color: blue;
+  color: yellow;
+}
+.texto-igac {
+ text-align: center;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+     font-size: 26px;
+     font-weight: bold;
+}
+
+.titulo {
+ text-align: center;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+     font-size: 26px;
+     font-weight: bold;
+}

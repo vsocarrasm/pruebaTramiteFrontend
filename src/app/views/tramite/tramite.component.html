@@ -1,0 +1,59 @@
+
+ <br/>
+					<br/>
+<div class="container">
+	<div class="row">
+	<div class="col-sm-4">
+      <div class="alert alert-danger" *ngIf="msg">
+        <a href="#" class="close" (click)="closeAlert()">
+          &times;
+        </a>
+        {{msg}}
+      </div>
+	</div>
+</div> 
+
+ <div id="modal" [class]="claseTitular">
+	 <div><span>Espere, por favor</span>  &nbsp;<img  src='../../app/assets/images/loading.gif'></div>
+	</div>
+<div class="infoPrincipal">
+<div class="row">
+    <div class="col-sm-16">
+      <h2>Tramites </h2>
+       <br/>
+					<br/>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="Cell">Número</th>
+            <th class="Cell">Año de radicación</th>
+            <th class="Cell">Nombre</th>
+            <th class="Cell">Descripción</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tramite of tramites let i = index">
+            <td>{{tramite.numero}}</td>
+            <td>{{tramite.anoradicacion}}</td>
+            <td>{{tramite.nombre}}</td>
+            <td>{{tramite.descripcion}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     </div>
+     <div class="row">
+   <div class="col-sm-12">
+    					<button type="submit" class="btn btn-success" (click)="consultar()">
+							Consultar
+						</button>
+		
+    </div>
+   
+     </div>
+</div>
+</div>
+ <br/>
+					<br/><br/>
+

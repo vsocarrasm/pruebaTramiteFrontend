@@ -1,0 +1,27 @@
+.login-body {
+    background-size: 100% auto;
+    height: auto;
+    box-shadow: 0 0 10px -6px black;
+    background-color: white;
+    padding: 22px;
+}
+.login-prebody{
+    margin-top:120px;
+    margin-bottom: 40px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+  /* Styles */
+  .login-body {
+    height: 330px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  .login-body {
+    height: 400px;
+  }
+}

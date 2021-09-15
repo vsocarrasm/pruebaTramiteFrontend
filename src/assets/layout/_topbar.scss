@@ -1,0 +1,101 @@
+.layout-wrapper {
+    .layout-topbar {
+        height: auto;
+        background-color: $topbarBgColor;
+        box-shadow: 0 0 10px -3px black;
+        padding: 0px;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 999; 
+        background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .logo_gobierno{
+            width: 100%;
+            max-width: 300px;
+            float: right;
+            padding: 0px 10px;
+        }
+        .titulo-agustin{
+            background-color: white;
+            box-shadow: 0 0 6px -4px black;
+            .site-title {
+                color: #b6b6b6;
+                display: block;
+                text-transform: uppercase;
+                font-size: 0.7em;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+        .menu-btn {
+            display: inline-block;
+            vertical-align: middle;
+
+            i {
+                font-size: 1.5em;
+            }
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            
+            img{
+                width: 100%;
+                max-width: 240px;
+                padding: 0px 10px;
+            }
+        }
+
+        .topbar-button {
+            @include border-radius(20px);
+            border: 2px dotted $topbarButtonBorderColor;
+            background: $topbarButtonBgColor;
+            color: $topbarButtonTextColor;
+            height: 2em;
+            min-width: 2em;
+            float: right;
+            display: block;
+            font-size: 1em;
+
+            .ui-button-icon-right {
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+}
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .layout-wrapper {
+        .layout-topbar {
+            .topbar-button {
+                .ui-button-text {
+                    display: none;
+                }
+
+                .ui-button-icon-right {
+                    right: 50%;
+                    margin-right: -.6em;
+                }  
+            }
+        }
+    }
+}
